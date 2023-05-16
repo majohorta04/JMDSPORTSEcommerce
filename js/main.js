@@ -3,8 +3,8 @@ const productos = [
     //Accesorios
     {
         id: "a1",
-        titulo: "Morrali",           
-        imagen: "../img/Mujer/m1.png",
+        titulo: "Morral",           
+        imagen: "../img/Accesorios/a1.png",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -14,7 +14,7 @@ const productos = [
     {
         id: "a2",
         titulo: "Maleta",
-        imagen: "../img/Mujer/m2.png",
+        imagen: "../img/Accesorios/a2.png",
         categoria: {
             nombre: "Accesorios",
             id: "accesorios"
@@ -273,7 +273,7 @@ const productos = [
             nombre: "Mujer",
             id: "mujer"
         },
-        precio: 210.000 
+        precio: 210000 
     },
 ];
 
@@ -308,7 +308,7 @@ function cargarProductos(productosElegidos){
     actualizarBotonesAgregar();
 }
 
-// cargarProductos(productos);
+cargarProductos(productos);
 
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
@@ -316,17 +316,15 @@ botonesCategorias.forEach(boton => {
         botonesCategorias.forEach(boton => boton.classList.remove("active"));
         e.currentTarget.classList.add("active");
 
-        if(e.currentTarget.id != "todos"){
-            const productoCategoria = productos.find(productos => producto.categoria.id === e.currentTarget.id);
-            tituloPrincipal.innerText = productoCategoria.categoria.nombre;
-
-            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
-            cargarProductos(productosBoton);
-        }else{
+        if (e.currentTarget.id != "todos") {
+            const productosCategoria = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+            tituloPrincipal.innerText = e.currentTarget.innerText;
+          
+            cargarProductos(productosCategoria);
+          } else {
             tituloPrincipal.innerText = "Todos los productos";
             cargarProductos(productos);
-        }
-        
+          }        
     })
 });
 
