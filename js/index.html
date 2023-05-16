@@ -17,26 +17,26 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <button class="boton-menu boton-categoria active"><i class="bi bi-bag-heart-fill"></i> Todos los productos</button>
+                        <button id = "todos" class="boton-menu boton-categoria active"><i class="bi bi-bag-heart-fill"></i> Todos los productos</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-gem"></i> Accesorios</button>
+                        <button id = "accesorios" class="boton-menu boton-categoria"><i class="bi bi-gem"></i> Accesorios</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-gender-female"></i> Mujer</button>
+                        <button id = "mujer" class="boton-menu boton-categoria"><i class="bi bi-gender-female"></i> Mujer</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-gender-male"></i> Hombre</button>
+                        <button id = "hombre" class="boton-menu boton-categoria"><i class="bi bi-gender-male"></i> Hombre</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-tags-fill"></i> Sale</button>
+                        <button id = "sale" class="boton-menu boton-categoria"><i class="bi bi-tags-fill"></i> Sale</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="bi bi-question-octagon-fill"></i> Preguntas Frecuentes</button>
+                        <button id = "preguntasFrecuentes" class="boton-menu boton-categoria"><i class="bi bi-question-octagon-fill"></i> Preguntas Frecuentes</button>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./carrito.html">
-                            <i class="bi bi-cart-check-fill"></i> Carrito <span class="numerito">0</span>
+                            <i class="bi bi-cart-check-fill"></i> Carrito <span id = "numerito" class="numerito">0</span>
                         </a>
                     </li>
                 </ul>
@@ -46,9 +46,9 @@
             </footer>
         </aside>
         <main>
-            <h2 class="titulo-principal">Todos los productos</h2>
-            <div class = "contenedor-productos">
-                <div class="producto">
+            <h2 class="titulo-principal" id = "titulo-principal">Todos los productos</h2>
+            <div id= "contenedor-productos" class = "contenedor-productos">
+                <!-- <div class="producto">
                     <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a1.png" alt="">
                     <div class="producto-detalles">
                         <h3 class="producto-titulo"> Morral</h3>
@@ -112,7 +112,15 @@
                         </div>
                     </div>
                 
-
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a7.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Gorra plana</h3>
+                            <p class="producto-precio">$130.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
+                
                 
                     <div class="producto">
                         <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a8.png" alt="">
@@ -123,10 +131,18 @@
                         </div>
                     </div>
             
+                    <div class="producto">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\accesorios\a9.png" alt="">
+                        <div class="producto-detalles">
+                            <h3 class="producto-titulo"> Reloj dama</h3>
+                            <p class="producto-precio">$250.000</p>
+                            <button class="producto-agregar">Agregar</button>
+                        </div>
+                    </div>
 
                 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h1.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h1.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Camisa</h3>
                             <p class="producto-precio">$200.000</p>
@@ -148,7 +164,7 @@
 
                 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h3.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h3.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Camisa</h3>
                             <p class="producto-precio">$200.000</p>
@@ -161,14 +177,14 @@
                         <img class="producto-imagen" src=" C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h4.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Camisa</h3>
-                            <p class="producto-precio">$400.000</p>
+                            <p class="producto-precio">$180.000</p>
                             <button class="producto-agregar">Agregar</button>
                         </div>
                     </div>
                 
 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h5.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h5.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Buso</h3>
                             <p class="producto-precio">$300.000</p>
@@ -178,7 +194,7 @@
                 
 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h6.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h6.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Jogger</h3>
                             <p class="producto-precio">$230.000</p>
@@ -188,7 +204,7 @@
                 
 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h7.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h7.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Sudadera</h3>
                             <p class="producto-precio">$400.000</p>
@@ -198,7 +214,7 @@
                 
 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h8.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h8.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Chaqueta</h3>
                             <p class="producto-precio">$230.000</p>
@@ -208,7 +224,7 @@
                 
 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h9.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Hombre\h9.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Sudadera</h3>
                             <p class="producto-precio">$250.000</p>
@@ -218,7 +234,7 @@
                 
 
                     <div class="producto">
-                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m1.png " alt="">
+                        <img class="producto-imagen" src="C:\Users\Maria jose Horta\JMD SPORTS Ecommerce\img\Mujer\m1.png" alt="">
                         <div class="producto-detalles">
                             <h3 class="producto-titulo"> Blusa</h3>
                             <p class="producto-precio">$95.000</p>
@@ -304,8 +320,8 @@
                             <p class="producto-precio">$210.000</p>
                             <button class="producto-agregar">Agregar</button>
                         </div>
-                    </div>
-                
+                    </div> -->
+            </div>    
         </main>
     </div>
 
